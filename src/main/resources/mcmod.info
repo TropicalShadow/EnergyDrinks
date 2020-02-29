@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "energydrinks",
+    "name": "EnergyDrinks",
+    "description": "Drink you favorite energy drinks in mc",
+    "version": "1.0.0.0",
+    "mcversion": "1.15.2",
+    "logoFile": "assets/tropicaldan/textures/logo.png",
+    "url": "minecraftforge.net/",
+    "updateJSON": "minecraftforge.net/versions.json",
+    "authorList": [
+      "TropicalShadow"
+    ],
+    "credits": "Munster Energy for the ability to stay up all night and make this"
+  }
+]

@@ -6,10 +6,8 @@ import net.minecraft.item.ItemGroup;
 import tk.tropicaldan.energydrinks.Items.ConsumableItemBase;
 
 public class DrinkOneConsumable extends ConsumableItemBase {
-    public Food food = new Food(new Item.Properties().group(ItemGroup.FOOD));
-
-    public DrinkOneConsumable(Properties prop, Food food) {
-        super(prop, food);
+    public DrinkOneConsumable(String name) {
+        super(name,1,5,1);
     }
 
 }

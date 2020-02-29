@@ -15,6 +15,8 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import tk.tropicaldan.energydrinks.init.ModBlock;
+import tk.tropicaldan.energydrinks.init.ModItem;
 import tk.tropicaldan.energydrinks.utils.EnergyDrinkInfo;
 
 import java.util.stream.Collectors;
@@ -27,6 +29,8 @@ public class EnergyDrinks {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public EnergyDrinks() {
+        ModBlock.initBlocks();
+        ModItem.initItems();
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading

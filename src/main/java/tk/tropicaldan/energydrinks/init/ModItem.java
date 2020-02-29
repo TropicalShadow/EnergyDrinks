@@ -3,7 +3,8 @@ package tk.tropicaldan.energydrinks.init;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.ObjectHolder;
-import tk.tropicaldan.energydrinks.Items.items.DrinkOneConsumable;
+import tk.tropicaldan.energydrinks.Items.items.BlueBullDrinkItem;
+import tk.tropicaldan.energydrinks.Items.items.MunsterDrinkItem;
 import tk.tropicaldan.energydrinks.utils.EnergyDrinkInfo;
 
 import java.util.ArrayList;
@@ -13,9 +14,11 @@ public class ModItem {
     public static ArrayList<Item> itemsToRegister = new ArrayList<>();
 
     public static Item Munster;
+    public static Item BlueBull;
 
     public static void initItems() {
-        Munster = new DrinkOneConsumable("munster").addToRegistryList();
+        Munster = new MunsterDrinkItem(false).addToRegistryList();
+        BlueBull = new BlueBullDrinkItem(false).addToRegistryList();
         //Debug = new DebugItem("debug").addToRegistryList();
     }
 }
